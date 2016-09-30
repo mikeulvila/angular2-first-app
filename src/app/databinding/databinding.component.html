@@ -1,0 +1,9 @@
+<h1>String Interpolation</h1>
+<p>
+  {{stringInterpolation}} | {{numberInterpolation}}
+</p>
+<h1>Property Binding</h1>
+<input type="text" [value]="stringInterpolation">
+<p [ngClass]="{ redBorder: true }">Is this styled?</p>
+<h3>Custom Property Binding</h3>
+<fa-property-binding [result]="10"></fa-property-binding>
