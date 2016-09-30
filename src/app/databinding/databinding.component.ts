@@ -9,4 +9,8 @@ export class DatabindingComponent {
   stringInterpolation = 'This is a string.';
   numberInterpolation = 2;
 
+  onClick(value: string) {
+    console.log(value);
+  }
+
 }
