@@ -1,4 +1,11 @@
 <h1>
-  {{title}}
+  {{ title }}
 </h1>
+<fa-lifecycle *ngIf="attach" [bindable]="boundValue">Lifecycle component
+  <p #contentChild>{{ test }}</p>
+</fa-lifecycle>
+<button (click)="attach = false">Click to remove the lifecycle component</button>
+<button (click)="test ='Changed Value'">Click to change test content</button>
+<button (click)="boundValue = 2000">Click to change bindable</button>
+<hr>
 <fa-databinding></fa-databinding>

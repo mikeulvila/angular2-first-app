@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Root component works!';
+  attach = true;
+  test = 'starting value';
+  boundValue = 999;
 }
